@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Coworking Details</h1>
+
+    <h3>Esto es el nombre: {{placeName}}</h3>
+    <h3>Esto es el rating: {{rating}}</h3>
+    <h3>Esto es la dirección: {{address}}</h3>
+    <h3>Esto es la dirección: {{phoneNumber}}</h3>
+    {{#each schedule}}
+    <p>Esto son los horarios: <br>{{this}}</p>
+    {{/each}}
+    <h3>Esto es la dirección: {{address}}</h3>
+    <img src="{{photo}}" alt="Photo" style="width: 300px;">
+</div>

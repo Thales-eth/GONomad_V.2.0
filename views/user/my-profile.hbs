@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>UN PERFIL MUY GUARRO</h1>
+    <p>Email:{{user.email}}</p>
+    <p>Name:{{user.name}}</p>
+    <p>Role:{{user.role}}</p>
+
+    {{#if isUser}}
+    <a href="/user/role-premium/{{user._id}}" class="btn btn-warning">Become Premium</a>
+    {{/if}}
+
+    {{#if isPremium}}
+    <img class="verified-img" src="/images/verified_ig.png" alt="premium">
+    <a href="/user/my-houses" class="btn btn-primary">My houses</a>
+    {{/if}}
+
+    {{#if isAdmin}}
+    <img class="verified-img" src="/images/verified_ig.png" alt="premium">
+    <a href="/user/my-houses" class="btn btn-primary">My houses</a>
+    {{/if}}
+</div>

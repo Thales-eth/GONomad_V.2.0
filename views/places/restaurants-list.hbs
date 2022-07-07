@@ -1,0 +1,14 @@
+<h1>listado de restaurantes</h1>
+{{#each result}}
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{types.[0]}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{name}}</h6>
+        <p class="card-text">Rating: {{rating}}</p>
+        <a href="/places/details/restaurants/{{name}}" class="card-link">Details</a>
+        <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
+{{/each}}
+
+

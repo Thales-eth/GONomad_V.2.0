@@ -1,0 +1,16 @@
+<h1>esto es el h1 de housing</h1>
+{{#each houses}}
+<ul>
+    <li>
+        <a href="/housing/details/{{id}}">
+            <h3>{{name}}</h3>
+        </a>
+        <p>{{description}}</p>
+        <img src="{{picture}}" alt="pic">
+        <a href="/housing/edit/{{id}}" class="btn btn-dark">Edit</a>
+        <form action="/housing/delete/{{id}}" method="POST">
+            <button class="btn btn-danger" type="submit">Delete</button>
+        </form>
+    </li>
+</ul>
+{{/each}}

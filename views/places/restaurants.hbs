@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Detalles Restaurantes</h1>
+    <h3>Esto es el nombre: {{placeName}}</h3>
+    <h3>Esto es el rating: {{rating}}</h3>
+    <h3>Esto es el nivel de precio: {{pricing}}</h3>
+    <h3>Esto es la dirección: {{address}}</h3>
+    <h3>Esto es el móvil: {{phoneNumber}}</h3>
+    {{#each schedule}}
+    <p>Esto son los horarios: <br>{{this}}</p>
+    {{/each}}
+    <img class="detail-photo" src="{{photo}}" alt="place picture">
+</div>

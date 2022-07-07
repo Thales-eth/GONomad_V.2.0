@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Página de detalles</h1>
+    <p>{{name}}</p>
+    <p>{{description}}</p>
+    <p>{{address}}</p>
+    <p>{{country}}</p>
+    <p>{{city}}</p>
+    <img src="{{picture}}" alt="casita chingona">
+    <a href="/housing/edit/{{id}}" class="btn btn-dark">Edit</a>
+    <form action="/housing/delete/{{id}}" method="POST">
+        <button class="btn btn-danger" type="submit">Delete</button>
+    </form>
+    <p></p>
+    <p>{{title}}</p>
+    <p>{{review}}</p>
+
+</div>

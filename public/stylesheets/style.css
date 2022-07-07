@@ -1,0 +1,257 @@
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-page {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-page::before {
+  content: '';
+  background: url('/images/geio-tischler-7hww7t6NLcg-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.title-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 8em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.main-btn {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding: 18px;
+  background-color: white;
+  color: #595c20;
+  border: 2px solid white;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: 0.5s;
+  backdrop-filter: blur(5px);
+}
+
+.main-btn:hover {
+  border-radius: 5px;
+  font-size: 1.2em;
+  /* background-color: black;
+  color: white; */
+  background-color: black;
+  color: white;
+}
+
+.search-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 60px;
+  padding: 10px 20px;
+  backdrop-filter: blur(5px) saturate(180%);
+}
+
+.search-bar input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: 0;
+  color: white
+}
+
+::placeholder {
+  color: white
+}
+
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-bar button:hover {
+  background-color: wheat;
+}
+
+.search-bar img {
+  width: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav a {
+  margin-left: 20px;
+  color: black;
+}
+
+.main-nav li {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.verified-img {
+  width: 40px;
+}
+
+.contact-box {
+  height: 200px;
+}
+
+.card-thumbnail {
+
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  object-fit: contain;
+}
+
+.card-thumbnail:hover {
+  transform: scale(1.5);
+}
+
+.destinations-hero {
+  height: 500px;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/harry-kessell-eE2trMn-6a0-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  color: white;
+  font-size: 4em;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.mission-hero {
+  height: 500px;
+  width: 100vw;
+  /* background-color: black; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/chuttersnap-QkPb5g9p338-unsplash.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero {
+  height: 800px;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/jezael-melgoza-3snKY0XMKwg-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About us */
+
+.about-us {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 100vw;
+  text-align: center;
+}
+
+.about-us h1 {
+  margin-top: 20px;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.trailer {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 150px;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.logo {
+  margin-bottom: 8px;
+}
+
+.word1 {
+  text-transform: uppercase;
+  color: #595c20;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.word2 {
+  font-weight: bolder;
+  color: black;
+  font-size: 1.4em;
+}
+
+.nav-list a {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
+.main-nav {
+  margin-top: 20px;
+}
+
+.detail-photo {
+  width: 300px;
+}
